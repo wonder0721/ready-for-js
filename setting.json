@@ -1,0 +1,82 @@
+{
+  "vetur.format.defaultFormatterOptions": {
+    // vetur使用的prettier格式化配置
+    "prettier": {
+      "printWidth": "200", // 单行代码最大长度(js)
+      "trailingComma": "none", // 多行时，尽可能打印尾随的逗号
+      "tabWidth": 2, // 会忽略vetur的tabSize配置
+      "semi": false, // 句尾是否加;
+      "singleQuote": true, // 使用单引号而不是双引号
+      "proseWrap": "always" // 指定文件折行方式
+    },
+    // vetur使用的prettyhtml格式化配置
+    "prettyhtml": {
+      "printWidth": 180, // html单行最大长度 超出则wrap attributes
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": false
+    }
+  },
+
+  // vue文件默认使用vetur进行格式化，除template使用prettyhtml外其余全部默认使用prettier
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // js文件使用全局prettier配置格式化
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // css文件使用全局prettier配置格式化
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // json文件使用全局prettier配置格式化
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "files.associations": {
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript"
+  },
+  "emmet.includeLanguages": {
+    "wxml": "html"
+  },
+  "minapp-vscode.disableAutoConfig": true,
+  "vetur.grammar.customBlocks": {
+    "docs": "md",
+    "i18n": "json"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDelete": false,
+  "vetur.ignoreProjectWarning": true, // 去除vetur警告提示信息
+
+  // 默认全局prettier格式化配置（优先级 项目中.prettierrc.js > vetur prettier > 默认全局配置）
+  "prettier.printWidth": 200,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.proseWrap": "always",
+  "prettier.trailingComma": "none",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "vetur.format.defaultFormatter.html": "prettyhtml",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.lintTask.enable": true,
+  "eslint.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "git.confirmSync": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "svg.preview.mode": "svg"
+}
